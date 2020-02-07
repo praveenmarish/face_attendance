@@ -10,7 +10,7 @@
 
 *****Important things todo*****
 
-Add the xml file in the work flow directory and create few directorys named images, recognizers, pickles
+Add few directory named images, recognizers, pickles in workflow directory
 
 
 Then run redesigned.py, it will shows the options
