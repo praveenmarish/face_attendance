@@ -8,7 +8,7 @@
 3.Less accuracy
 
 
-*****Important things todo*****
+            *****Important things todo*****
 
 Add the xml file in the work flow directory and create few directorys named images, recognizers, pickles
 
