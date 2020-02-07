@@ -1,7 +1,4 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-this is my first project
-Write your name on line 6, save it, and then head back to GitHub Desktop.
-1111111111111111111111111111
-111111111111111111111111
+face recognition based attendance using cascade
+1.This code will helps to take attendance using face.
+2.This wont provide any security, because the face detection detect face even in a photos.
+3.Less accuracy
