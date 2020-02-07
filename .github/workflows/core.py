@@ -53,8 +53,8 @@ def take_photos():
         #initiate camera,get path,name of floder
         webcam = cv2.VideoCapture(0)
         BASE_DIR =os.getcwd()
-        #name=input("enter student name:")
-        name="marish"
+        name=input("enter student name:")
+        #name="marish"
         pathneed="images\\"+name
         image_dir = os.path.join(BASE_DIR, pathneed)
         def overwrite():
