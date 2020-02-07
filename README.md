@@ -1,4 +1,4 @@
-                    FACE RECOGNITION BASED ATTENDANCE SYSTEM
+*****FACE RECOGNITION BASED ATTENDANCE SYSTEM*****
 
 
 1.This code will helps to take attendance using face.
@@ -8,7 +8,7 @@
 3.Less accuracy
 
 
-            *****Important things todo*****
+*****Important things todo*****
 
 Add the xml file in the work flow directory and create few directorys named images, recognizers, pickles
 
