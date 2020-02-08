@@ -8,9 +8,4 @@
 3.Less accuracy
 
 
-*****Important things todo*****
-
-Add few directory named images, recognizers, pickles in workflow directory
-
-
 Then run redesigned.py, it will shows the options
