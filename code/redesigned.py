@@ -1,8 +1,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from core import test, take_photos, train, attendence
+from core import units
 import sys
+import threading
 
 class Ui_MainWindow(object):
+    def __init__(self):
+        self.core=units()
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
@@ -54,25 +58,33 @@ class Ui_MainWindow(object):
         
     def one_click(self):
         self.textEdit.setText("Testing camera...")
-        test()
+        #t1 = threading.Thread(target=self.core.test)
+        #t1.start()
+        #t1.join()
+        #thread.start_new_thread(self.core.test)
+        #self.core.test()
         self.textEdit.setText(" ")
         pass
     
     def two_click(self):
         self.textEdit.setText("Taking photos...")
-        take_photos()
+        self.core.take_photos()
         self.textEdit.setText(" ")
         pass
         
     def three_click(self):
         self.textEdit.setText("Train from images...")
-        train()
+        t1 = threading.Thread(target=self.core.train)
+        #t1.setDaemon(True)
+        t1.start()
+        t1.join()
+        #self.core.train()
         self.textEdit.setText(" ")
         pass
         
     def four_click(self):
         self.textEdit.setText("Taking attendance")
-        attendence()
+        self.core.attendence()
         self.textEdit.setText(" ")
         pass
 
